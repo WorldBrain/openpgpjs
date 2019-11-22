@@ -17,7 +17,7 @@ import sha224 from 'hash.js/lib/hash/sha/224';
 import sha384 from 'hash.js/lib/hash/sha/384';
 import sha512 from 'hash.js/lib/hash/sha/512';
 import { ripemd160 } from 'hash.js/lib/hash/ripemd';
-import stream from 'web-stream-tools';
+import * as stream from 'readable-stream';
 import md5 from './md5';
 import config from '../../config';
 import util from '../../util';

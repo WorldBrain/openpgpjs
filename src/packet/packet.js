@@ -25,7 +25,7 @@
  * @module packet/packet
  */
 
-import stream from 'web-stream-tools';
+import * as stream from 'readable-stream';
 import enums from '../enums';
 import util from '../util';
 

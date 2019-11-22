@@ -8,7 +8,7 @@
  * @requires util
  */
 
-import stream from 'web-stream-tools';
+import * as stream from 'readable-stream';
 import * as packets from './all_packets';
 import packetParser from './packet';
 import config from '../config';

@@ -28,7 +28,7 @@ import BN from 'bn.js';
 import util from '../util';
 
 // Do not use util.getNodeCrypto because we need this regardless of use_native setting
-const nodeCrypto = util.detectNode() && require('crypto');
+const nodeCrypto = util.detectNode() && require('react-native-crypto');
 
 export default {
   /**

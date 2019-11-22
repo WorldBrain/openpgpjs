@@ -29,7 +29,7 @@
  */
 
 import BN from 'bn.js';
-import nacl from 'tweetnacl/nacl-fast-light.js';
+import nacl from 'tweetnacl/nacl-fast.js';
 import random from '../../random';
 import enums from '../../../enums';
 import util from '../../../util';

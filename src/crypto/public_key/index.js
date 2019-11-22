@@ -8,7 +8,7 @@
  * @module crypto/public_key
  */
 
-import nacl from 'tweetnacl/nacl-fast-light.js';
+import nacl from 'tweetnacl/nacl-fast.js';
 import rsa from './rsa';
 import elgamal from './elgamal';
 import elliptic from './elliptic';

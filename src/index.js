@@ -104,7 +104,8 @@ export { default as OID } from './type/oid';
  * @see streams
  * @name module:openpgp.stream
  */
-export { default as stream } from 'web-stream-tools';
+import * as stream from 'readable-stream';
+export { stream };
 
 /**
  * @see module:encoding/armor
@@ -134,7 +135,7 @@ export { default as crypto } from './crypto';
  * @see module:keyring
  * @name module:openpgp.Keyring
  */
-export { default as Keyring } from './keyring';
+// export { default as Keyring } from './keyring';
 
 /**
  * @see module:worker/async_proxy

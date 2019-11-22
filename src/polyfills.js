@@ -50,7 +50,8 @@ if (typeof window !== 'undefined') {
 }
 
 if (typeof TransformStream === 'undefined') {
-  require('@mattiasbuelens/web-streams-polyfill/es6');
+  const stream = require('readable-stream')
+  TransformStream = stream.TransformStream;
 }
 if (typeof TextEncoder === 'undefined') {
   const nodeUtil = util.nodeRequire('util') || {};

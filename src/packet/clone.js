@@ -22,7 +22,7 @@
  * @module packet/clone
  */
 
-import stream from 'web-stream-tools';
+import * as stream from 'readable-stream';
 import { Key } from '../key';
 import { Message } from '../message';
 import { CleartextMessage } from '../cleartext';

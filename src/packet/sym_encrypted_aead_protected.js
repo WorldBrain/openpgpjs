@@ -23,7 +23,7 @@
  * @requires util
  */
 
-import stream from 'web-stream-tools';
+import * as stream from 'readable-stream';
 import config from '../config';
 import crypto from '../crypto';
 import enums from '../enums';

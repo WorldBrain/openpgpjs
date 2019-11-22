@@ -31,7 +31,7 @@
  */
 
 import BN from 'bn.js';
-import nacl from 'tweetnacl/nacl-fast-light.js';
+import nacl from 'tweetnacl/nacl-fast.js';
 import Curve, { jwkToRawPublic, rawPublicToJwk, privateToJwk } from './curves';
 import aes_kw from '../../aes_kw';
 import cipher from '../../cipher';

@@ -27,7 +27,7 @@
  */
 
 import emailAddresses from 'email-addresses';
-import stream from 'web-stream-tools';
+import * as stream from 'readable-stream';
 import config from './config';
 import util from './util'; // re-import module to access util functions
 import b64 from './encoding/base64';
@@ -605,7 +605,7 @@ export default {
       return;
     }
 
-    return util.nodeRequire('crypto');
+    return require('react-native-crypto');
   },
 
   getNodeZlib: function() {
@@ -613,7 +613,7 @@ export default {
       return;
     }
 
-    return util.nodeRequire('zlib');
+    return require('zlib');
   },
 
   /**
@@ -622,16 +622,16 @@ export default {
    * @returns {Function}   The Buffer constructor or 'undefined'
    */
   getNodeBuffer: function() {
-    return (util.nodeRequire('buffer') || {}).Buffer;
+    return (require('buffer') || {}).Buffer;
   },
 
   getNodeStream: function() {
-    return (util.nodeRequire('stream') || {}).Readable;
+    return (require('stream') || {}).Readable;
   },
 
   getHardwareConcurrency: function() {
     if (util.detectNode()) {
-      const os = util.nodeRequire('os');
+      const os = require('os');
       return os.cpus().length;
     }
 

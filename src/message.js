@@ -29,7 +29,7 @@
  * @module message
  */
 
-import stream from 'web-stream-tools';
+import * as stream from 'readable-stream';
 import armor from './encoding/armor';
 import type_keyid from './type/keyid';
 import config from './config';
