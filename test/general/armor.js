@@ -1,4 +1,4 @@
-const openpgp = typeof window !== 'undefined' && window.openpgp ? window.openpgp : require('../../src/index');
+const openpgp = typeof window !== 'undefined' && window.openpgp ? window.openpgp : require('../../dist/openpgp');
 
 const chai = require('chai');
 
