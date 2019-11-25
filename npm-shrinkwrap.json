@@ -4,12 +4,6 @@
   "lockfileVersion": 1,
   "requires": true,
   "dependencies": {
-    "@mattiasbuelens/web-streams-polyfill": {
-      "version": "0.3.1",
-      "resolved": "https://registry.npmjs.org/@mattiasbuelens/web-streams-polyfill/-/web-streams-polyfill-0.3.1.tgz",
-      "integrity": "sha512-IW+tCurEH2NL2tA3KKFAMXa90WWmTJMZksnQWMABe3bMijV7hEiOLthy4tKGTnUTV8qVf8WTCApiGmKb75Bxkg==",
-      "dev": true
-    },
     "@sinonjs/formatio": {
       "version": "2.0.0",
       "resolved": "https://registry.npmjs.org/@sinonjs/formatio/-/formatio-2.0.0.tgz",
