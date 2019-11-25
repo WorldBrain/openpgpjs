@@ -46439,7 +46439,8 @@ exports.default = {
    * @returns {Function}   The Buffer constructor or 'undefined'
    */
   getNodeBuffer: function getNodeBuffer() {
-    return (require('buffer') || {}).Buffer;
+    // return (require('buffer') || {}).Buffer;
+    return undefined;
   },
 
   getNodeStream: function getNodeStream() {
@@ -46604,7 +46605,7 @@ exports.default = {
  */
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./config":95,"./encoding/base64":128,"./util":171,"buffer":"buffer","email-addresses":33,"os":51,"react-native-crypto":"react-native-crypto","readable-stream":83,"stream":"stream","zlib":"zlib"}],172:[function(require,module,exports){
+},{"./config":95,"./encoding/base64":128,"./util":171,"email-addresses":33,"os":51,"react-native-crypto":"react-native-crypto","readable-stream":83,"stream":"stream","zlib":"zlib"}],172:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {

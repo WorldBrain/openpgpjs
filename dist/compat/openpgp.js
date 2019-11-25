@@ -60730,7 +60730,8 @@ exports.default = {
    * @returns {Function}   The Buffer constructor or 'undefined'
    */
   getNodeBuffer: function getNodeBuffer() {
-    return (_dereq_('buffer') || {}).Buffer;
+    // return (require('buffer') || {}).Buffer;
+    return undefined;
   },
 
   getNodeStream: function getNodeStream() {
@@ -60898,7 +60899,7 @@ exports.default = {
  */
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./config":331,"./encoding/base64":364,"./util":407,"babel-runtime/core-js/object/entries":20,"babel-runtime/core-js/promise":24,"babel-runtime/helpers/asyncToGenerator":27,"babel-runtime/helpers/slicedToArray":28,"babel-runtime/helpers/typeof":30,"babel-runtime/regenerator":31,"buffer":"buffer","email-addresses":266,"os":284,"react-native-crypto":"react-native-crypto","readable-stream":316,"stream":"stream","zlib":"zlib"}],408:[function(_dereq_,module,exports){
+},{"./config":331,"./encoding/base64":364,"./util":407,"babel-runtime/core-js/object/entries":20,"babel-runtime/core-js/promise":24,"babel-runtime/helpers/asyncToGenerator":27,"babel-runtime/helpers/slicedToArray":28,"babel-runtime/helpers/typeof":30,"babel-runtime/regenerator":31,"email-addresses":266,"os":284,"react-native-crypto":"react-native-crypto","readable-stream":316,"stream":"stream","zlib":"zlib"}],408:[function(_dereq_,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {

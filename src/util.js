@@ -622,7 +622,8 @@ export default {
    * @returns {Function}   The Buffer constructor or 'undefined'
    */
   getNodeBuffer: function() {
-    return (require('buffer') || {}).Buffer;
+    // return (require('buffer') || {}).Buffer;
+    return undefined;
   },
 
   getNodeStream: function() {
