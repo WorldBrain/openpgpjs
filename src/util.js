@@ -623,7 +623,7 @@ export default {
    */
   getNodeBuffer: function() {
     // return (require('buffer') || {}).Buffer;
-    return undefined;
+    return Buffer;
   },
 
   getNodeStream: function() {
